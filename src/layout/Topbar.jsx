@@ -2,23 +2,32 @@ import { Bell, Search } from "lucide-react";
 
 export default function Topbar() {
   return (
-    <div style={{ display:"flex", alignItems:"center", justifyContent:"space-between", marginBottom:16 }}>
-      <h1 className="h1">Dashboard</h1>
+  <div className="topbar">
+    <h1 className="h1">Dashboard</h1>
 
-      <div style={{ display:"flex", alignItems:"center", gap:12 }}>
-        <div className="card" style={{ padding:"10px 12px", display:"flex", alignItems:"center", gap:10, borderRadius:999, minWidth:320 }}>
-          <Search size={18} color="#6B7280" />
-          <input placeholder="Search anything..." style={{ border:"none", outline:"none", width:"100%", fontSize:14, background:"transparent" }} />
-        </div>
+    <div style={{display:"flex",alignItems:"center",gap:16}}>
+      <div className="search">
+        <Search size={18}/>
+        <input placeholder="Search anything..." />
+      </div>
 
-        <div className="card" style={{ width:40, height:40, borderRadius:12, display:"grid", placeItems:"center" }}>
-          <Bell size={18} />
-        </div>
+      <button className="card" style={{width:44,height:44,display:"grid",placeItems:"center",padding:0}}>
+        <Bell size={18}/>
+      </button>
 
-        <div style={{ width:40, height:40, borderRadius:999, background:"#F59E0B", display:"grid", placeItems:"center", fontWeight:800, color:"#111827" }}>
-          T
-        </div>
+      <div style={{
+        width:44,
+        height:44,
+        borderRadius:999,
+        background:"linear-gradient(135deg,#3B82F6,#60A5FA)",
+        display:"grid",
+        placeItems:"center",
+        color:"#fff",
+        fontWeight:800
+      }}>
+        T
       </div>
     </div>
-  );
+  </div>
+);
 }

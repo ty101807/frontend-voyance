@@ -72,7 +72,7 @@ export default function Dashboard() {
   const totalIngredients = healthRows.length;
 
   return (
-    <div className="main">
+    <div className="container">
       <div style={{ display:"flex", alignItems:"center", justifyContent:"space-between" }}>
         <Topbar />
       </div>
