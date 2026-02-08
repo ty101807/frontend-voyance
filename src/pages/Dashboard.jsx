@@ -28,6 +28,7 @@ export default function Dashboard() {
 
   useEffect(() => {
     let alive = true;
+      // eslint-disable-next-line react-hooks/set-state-in-effect
     setLoading(true);
     setErr("");
 
